@@ -14,7 +14,7 @@
   tasks:
   - name: Create a JIRA issue
     uri:
-      url: https://3.8.7.200//mgmt/shared/appsvcs/declare/
+      url: https://3.8.7.200//mgmt/shared/appsvcs/declare
       user: "{{bigip_user}}"
       password: "{{bigip_pass}}"
       method: "{{uri_method}}"
