@@ -9,11 +9,12 @@
 
   vars:
     uri_method: POST
+    bigip_addr: "3.10.147.142"
 
   tasks:
     - name: REST CALL TO BIG-IP
       uri:
-        url: https://3.10.147.142/mgmt/shared/appsvcs/declare
+        url: "https://{{ bigip_addr }}/mgmt/shared/appsvcs/declare"
         method: "{{ uri_method }}"
         user: "{{ bigip_user }}"
         password: "{{ bigip_pass }}"
